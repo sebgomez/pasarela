@@ -5,6 +5,8 @@
  */
 package com.udea.session;
 
+import com.udea.entity.Customer;
+import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -13,5 +15,9 @@ import javax.ejb.Local;
  */
 @Local
 public interface CustomerManagerLocal {
+
+    List<Customer> getAllCustomers();
+
+    Customer update(Customer customer);
     
 }

@@ -5,6 +5,8 @@
  */
 package com.udea.session;
 
+import com.udea.entity.Creditcard;
+import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -13,5 +15,9 @@ import javax.ejb.Local;
  */
 @Local
 public interface CreditCardManagerLocal {
+
+    List<Creditcard> getCreditcards();
+
+    Creditcard update(Creditcard creditcard);
     
 }
