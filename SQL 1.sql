@@ -2,7 +2,6 @@ CREATE TABLE Transaccion(
 id INT NOT NULL,
 valor INT NOT NULL,
 tarjeta_credito INT REFERENCES CreditCard(id),
-cliente INT REFERENCES Customer(id),
 marca_tiempo TIMESTAMP, 
 PRIMARY KEY(id));
 CREATE TABLE CreditCard(
